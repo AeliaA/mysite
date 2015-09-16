@@ -1,0 +1,140 @@
+body {
+	background: pink;
+	font-size: 16px;
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.4
+	font-weigth:200;
+	/*font-style: italic;*/
+}
+
+a {
+	color:red;
+}
+
+a:hover {
+	color:crimson;
+}
+h1, h2 {
+	font-family: 'Poiret',;cursive;
+	/*text-shadow: 2px, 2px, 5px, #000000;*/
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+	text-align: center;
+}
+/*Layout---------*/
+
+header,
+.container,
+footer {
+	
+	margin: 0 auto;
+	width:88%;
+	max-width:960px;
+	/*border: 1px dashed green;*/
+}
+
+.wrapper {
+	padding: 1em 0;
+	/*background:#ffffff;*/
+	text-align: justify;
+	background: rgba(255, 255, 255, 0.9);
+	/*background: url(images/paisley.png);*/
+	/*border: 1px dashed green;*/
+}
+
+/*Navigation-------------*/
+
+nav ul {
+	padding:0;
+}
+
+nav ul li {
+	float:left;
+	margin-right: .5em;
+	list-style: none;
+}
+
+nav ul li a {
+	/* creating the whole space as link*/
+	background: #cccccc;
+	padding: .5em 1em;
+	border-radius: 15px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+	transition: all 1s ease-in-out;
+
+}
+
+	hr	{
+	width: 100px;
+}
+
+	strong { 
+	font-weight: 200;
+	color: red;
+}
+
+blockquote {
+
+}
+
+nav ul li a:hover {
+
+	background: pink;
+}
+
+/* Floats---*/
+
+.align-right {
+	float:right;
+	margin: 1em 0 1em 1em;
+}
+
+.align-left {
+	float:left;
+	margin: 1em 1em 1em 0;
+}
+.align-center {
+	margin: 1em auto;
+	display: block;
+}
+/* Custom bullets
+------------------------------------------*/
+
+.list--no-bullets {
+	padding:0;
+	list-style:none;	
+}
+
+.bullet {
+	height: 16px;
+	width: 16px;
+	background: url(images/bullet2.png);
+	display: inline-block;
+	margin: 0 .2em -.1em 0;
+}
+
+/* Misc to fix some visual layout mistakes
+------------------------------------------*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}
+/* media queries------*/
+
+@media screen and (min-width: 600px) {
+	main {
+		width:60%;
+		float:left;
+	}
+	.secondary {
+		width:36%;
+		float:right;
+		border-radius: 5px;
+		padding: .5em;
+		border: 1px dashed green;
+	}
+}
